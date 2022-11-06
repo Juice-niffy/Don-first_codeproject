@@ -1,0 +1,111 @@
+@media screen and (max-width: 480px) {
+    body {
+        background-image: linear-gradient(rgba(65, 105, 225, 0.733), aliceblue, red);
+        background-repeat: no-repeat;
+        margin: 0px;
+        position: relative;
+    }
+
+    .nav-1 {
+        display: none;
+    }
+    .nav-2{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        /* background-color: royalblue; */
+        padding-top: 5px;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: royalblue;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        display: flex;
+        cursor: pointer;
+        position: fixed;
+        /* z-index: 10px; */
+        left: -100%;
+        top: 18px;
+        gap: 10px;
+        flex-direction: column;
+        background-color: royalblue;
+        width: 100%;
+        text-align: center;
+        /* padding-left: 10px; */
+        padding-top: 10px;
+        transition: 0.3s;
+        margin: 16px 0px;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .bar-1.active
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    /* style for the <aside class="left-aside"> start */
+    .left-aside {
+        border-right: none;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    b {
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 0px;
+        font-weight: normal;
+    }
+
+    .table-2 {
+        /* display: none; */
+    }
+
+    .table-3 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .riri {
+        font-size: small;
+    }
+
+    .main-row-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 10px;
+        margin: 10.10px;
+    }
+}
